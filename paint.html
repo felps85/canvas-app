@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Draw yourself</title>
+    <meta name="A simple app to make a draw" content="A simple app to make a draw">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="styles.css">
+
+<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link rel="icon" type="image/png" href="URL"> -->
+
+</head>
+<body>
+  <canvas width="600" height="400" id="mainCanvas"></canvas>
+  <div class="controls">
+      <ul>
+          <li class="color red selected"></li>
+          <li class="color blue"></li>
+          <li class="color yellow"></li>
+          <li class="color addColor"></li>
+        </ul>
+        <div id="colorSelect">
+          <div class="sliders">
+            <p>
+                <label for="red">R:</label>
+                <input id="red" name="red" type="range" min=0 max=255 value=255>
+                <span id="red-span">255</span>
+            </p>
+            <p>
+                <label for="green">G:</label>
+                <input id="green" name="green" type="range" min=0 max=255 value=255>
+                <span id="green-span">255</span>
+            </p>
+            <p>
+                <label for="blue">B:</label>
+                <input id="blue" name="blue" type="range" min=0 max=255 value=255>
+                <span id="blue-span">255</span>
+
+            </p>
+          </div>
+          <div>
+               <button class="button" id="addNewColor">Add Color</button>
+          </div>
+        </div>
+        <!-- <button class="button" id="saveImage">Save this image</button> -->
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
